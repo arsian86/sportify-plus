@@ -1,0 +1,26 @@
+{
+  "name": "sportify-plus",
+  "version": "1.0.0",
+  "main": "app.js",
+  "bin": {
+    "sportify-plus": "bin/www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www.js",
+    "dev": "nodemon bin/www.js",
+    "seed": "node ./db/seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "pg": "^8.15.5",
+    "typeorm": "^0.3.22",
+    "uuid": "^11.1.0"
+  }
+}
