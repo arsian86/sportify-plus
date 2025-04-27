@@ -8,7 +8,7 @@ const AppDataSource = new DataSource({
   username: process.env.DB_USER || "sportify",
   password: process.env.DB_PASSWORD || "test1234",
   database: process.env.DB_NAME || "test",
-  // synchronize: true, //開發時 true，部署時請改為 false 並使用 migration
+  synchronize: true, //開發時 true，部署時請改為 false 並使用 migration
   logging: true,
   entities: [
     require("../entities/Admin"),
@@ -22,6 +22,7 @@ const AppDataSource = new DataSource({
     require("../entities/User_Course_Favorite"),
     require("../entities/Course_Chapter"),
     require("../entities/Payment_Transfer"),
+    require("../entities/Course_Video"),
   ],
 });
 

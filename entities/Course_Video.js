@@ -15,7 +15,7 @@ module.exports = new EntitySchema({
     },
     mux_playback_id: { type: "varchar", length: 64, nullable: false },
     duration: { type: "int", nullable: true },
-    status: { type: "varchar", length: 32, default: "'waiting'" },
+    status: { type: "varchar", length: 32, default: "waiting" },
     resolution_tier: { type: "varchar", length: 16, nullable: true },
     position: { type: "int", default: 1 },
     thumbnail_url: { type: "varchar", length: 2048, nullable: true },

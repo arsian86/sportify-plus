@@ -17,6 +17,7 @@ AppDataSource.initialize()
       const favoriteRepo = AppDataSource.getRepository("User_Course_Favorite");
       const chapterRepo = AppDataSource.getRepository("Course_Chapter");
       const paymentRepo = AppDataSource.getRepository("Payment_Transfer");
+      const videoRepo = AppDataSource.getRepository("Course_Video");
 
       // 建立 Admin
       await adminRepo.save([
